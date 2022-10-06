@@ -1,6 +1,6 @@
-# Frontend Mentor - Blogr landing page
+# Frontend Mentor - Insure landing page
 
-![Design preview for the Blogr landing page coding challenge](assets/design/desktop-preview.jpg)
+![Design preview for the Insure landing page coding challenge](assets/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -17,7 +17,7 @@ Thanks for checking out this front-end coding challenge.
 
 ### Links
 
-- Live Site URL: [Blogr landing page](https://rubylenshy.github.io/blogr-landing-page/)
+- Live Site URL: [Insure landing page](https://rubylenshy.github.io/insure-landing-page/)
 
 ## Author
 
