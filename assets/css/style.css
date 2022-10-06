@@ -72,7 +72,7 @@ nav{
 }
 
 .mobile-nav{
-    position: absolute;
+    position: fixed;
     background: url(../images/bg-pattern-mobile-nav.svg) bottom no-repeat var(--vd-violet);
     background-size: contain;
     width: 100%;
