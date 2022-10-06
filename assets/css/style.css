@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;600;700&display=swap');
+
+:root{
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+    --vd-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --white: hsl(0, 0%, 98%);
+
+    --ff-dm-serif: 'DM Serif Display', serif;
+    --ff-Karla: 'Karla', sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3{
+    font-family: var(--ff-dm-serif);
+}
+h2{
+    font-size: 2.45em;
+    line-height: 1.2em;
+}
+button,a,ul,li,h4,p{
+    font-family: var(--ff-Karla);
+}
+
+button{
+    padding: 15px 30px;
+    border: 2px solid var(--white);
+    background: none;
+    color: var(--white);
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+.flex{
+    display: flex;
+}
+.navbar-desktop,.ill-img img:nth-child(1),
+img[alt='Close']{
+    display: none;
+}
+.the-hr{
+    width: 100px;
+    border: 1px solid var(--dark-grayish-violet);
+}
+
+
+
+nav{
+    background: var(--white);
+    padding: 25px 25px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.hamburger{
+    background: none;
+    border: none;
+}
+
+.mobile-nav{
+    position: absolute;
+    background: url(../images/bg-pattern-mobile-nav.svg) bottom no-repeat var(--vd-violet);
+    background-size: contain;
+    width: 100%;
+    height: 92vh;
+    left: 100%;
+    text-align: center;
+    padding: 50px 0;
+    transition: all .4s;
+}
+.mobile-nav li{
+    color: var(--white);
+    font-size: 1.45em;
+    margin: 30px 0;
+}
+.mobile-nav.opened{
+    left: 0;
+}
+.mobile-nav .plans-btn{
+    width: 90%;
+    font-size: 1.15em;
+}
+
+/* .container{
+
+} */
+
+
+.illustration{
+    flex-direction: column-reverse;
+    background: var(--dark-violet);
+}
+.illustration img{
+    width: 100%;
+}
+
+.ill-contents{
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--white);
+    font-weight: 400;
+}
+.ill-contents .the-hr{
+    display: none;
+}
+.primary-heading{
+    font-size: 2.85em;
+    line-height: 1em;
+}
+.primary-paragraph{
+    margin: 20px auto 30px;
+    line-height: 1.5em;
+    width: 90%;
+    font-weight: 400;
+}
+.ill-contents .plans-btn:hover,
+.how-we-work .work-btn:hover{
+    color: var(--vd-violet);
+    background: var(--white);
+}
+
+.the-difference{
+    padding: 100px 20px;
+    text-align: center;
+}
+.the-difference h2{
+    margin: 30px 0;
+}
+.the-difference .the-hr{
+    margin: 0 auto;
+}
+.different-points{
+    flex-direction: column;
+}
+
+.points{
+    transition: all .4s;
+}
+.points img{
+    margin-top: 45px;
+}
+.points h3{
+    font-size: 1.65em;
+    margin: 20px 0 15px;
+}
+.points p{
+    font-size: 1.15em;
+    margin: 0 auto;
+    max-width: 400px;
+    color: var(--dark-grayish-violet);
+}
+
+.how-we-work{
+    flex-direction: column;
+    padding: 80px 30px;
+    background: var(--dark-violet);
+    text-align: center;
+    width: 85%;
+    margin: 0 auto 100px;
+}
+.how-we-work h2{
+    margin-bottom: 35px;
+    color: var(--white);
+    font-size: 2.25em;
+}
+
+footer{
+    text-align: center;
+    padding: 55px 0;
+    background: rgba(131, 125, 135, 0.062);
+}
+footer hr{
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-header{
+    flex-direction: column;
+    padding: 35px 0;
+}
+.footer-header img{
+    margin-bottom: 20px;
+}
+.footer-icons img{
+    margin: 0 7px;
+}
+.footer-icons img:hover{
+    cursor: pointer;
+    filter: brightness(0);
+}
+.footer-links h4{
+    color: var(--dark-grayish-violet);
+    margin: 30px auto;
+}
+.links{
+    flex-direction: column;
+}
+.links-li li{
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: var(--vd-violet);
+    font-weight: bold;
+}
+.links-li a:hover{
+    text-decoration: underline;
+}
+
+
+@media (min-width: 800px) {
+    .mobile-nav,
+    .navbar-mobile,
+    .ill-img img:nth-child(2){
+        display: none;
+    }
+    .ill-img img:nth-child(1){
+        display: inherit;
+    }
+
+
+    .navbar-desktop{
+        display: flex;   
+    }
+    .desktop-links{
+        align-items: center;
+    }
+    .desktop-links li{
+        margin: 0 10px;
+        color: var(--dark-grayish-violet);
+        font-weight: 600;
+    }
+    .desktop-links li:hover{
+        color: var(--vd-violet);
+    }
+    .navbar-desktop .plans-btn{
+        border: 2px solid var(--vd-violet);
+        color: var(--vd-violet);
+    }
+    .navbar-desktop .plans-btn:hover{
+        background: var(--vd-violet);
+        color: var(--white);
+    }
+
+    .illustration{
+        flex-direction: row;
+        justify-content: center;
+        height: 500px;
+        padding: 40px 0;
+    }
+    .ill-contents .the-hr{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .ill-contents{
+        width: 50%;
+        min-width: 400px;
+        padding: 0 20px 30px;
+        text-align: left;
+    }
+    .primary-heading{
+        max-width: 80%;
+    }
+    .ill-img img{
+        max-width: 450px;
+    }
+    .primary-paragraph{
+        margin: 20px 0 30px;
+    }
+
+    .the-difference{
+        padding: 220px 100px 150px;
+    }
+    .the-difference h2{
+        font-size: 3.25em;
+    }
+    .points:hover img{
+        animation: shake .4s infinite;
+    }
+
+    .how-we-work{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        margin: 0 100px 100px;
+        padding: 50px 80px;
+    }
+    .how-we-work h2{
+        max-width: 450px;
+        font-size: 2.85em;
+        margin: 0;
+    }
+
+    footer{
+        padding: 55px 100px;
+        text-align: left;
+    }
+    .footer-header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer hr{
+        width: 100%;
+    }
+
+    .footer-header img{
+        margin: 0;
+    }
+    .footer-icons{
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+    }
+    .footer-icons img{
+        margin: 0;
+    }
+
+    .links{
+        flex-direction: row;
+        max-width: 1100px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1150px) {
+    .illustration{
+        padding: 40px 120px;
+        height: 450px;
+    }
+
+
+    .the-difference{
+        text-align: left;   
+    }
+    .the-difference .the-hr{
+        margin: 0 0 50px;
+    }
+
+    
+    .points{
+        max-width: 400px;
+        margin: 0 30px 0 0;
+    }
+    .different-points{
+        flex-direction: row;
+    }
+}
+
+@keyframes shake {
+    0%, 100%{
+        transform: rotate(-25deg);
+    }
+    25%, 50%{
+        transform: rotate(25deg);
+    }
+}
